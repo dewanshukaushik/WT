@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css"> 
+<head>
+           
+ <title>
+      Student Registration Form
+ </title>
+</head>
+           
+     
+<body >
+          
+          
+          <div style="margin: auto;width: 30%;">
+          <form >
+             <h2><center>Student Registration Form</center></h2>
+             <p>Fill in this form to register</p>
+             <br>
+             
+           
+             <label><b>First Name</b></label> 
+             <input type="text" placeholder="Enter your first name" name="first_name" required>
+             <br>
+             
+             <br>
+             <label><b>Last Name</b></label>
+             <input type="text" placeholder="Enter your last name" name="last_name" required>
+             <br>
+             <br>
+             <label><b>E-mail</b></label>
+             <input type="email" placeholder="Enter your e-mail" name="email" required>
+             <br>
+             <br>
+             <label><b>Phone-no</b></label>
+             <input type="number" placeholder="Enter your number" name="phone-no" required>
+             <br>
+             <br>
+             <label><b>Date of Birth</b></label>
+             <input type="date" name="dob" required>
+             <br>
+             <br>
+             <label><b>Set Username</b></label>
+             <input type="text" placeholder="Set Username" name="username" required>
+             <br>
+             <br>
+             <label><b>Set Password</b></label>
+             <input type="password" placeholder="Set password" name="password" required>
+             <br>
+             
+             <br>
+             <label><b>Gender</b></label><br>
+             <input type="radio" name="gender" value="Male">
+             <label for="Male">Male</label><br>
+             <input type="radio" name="gender" value="Female">
+             <label for="Female">Female</label><br>
+             <input type="radio" name="gender" value="Others">
+             <label for="Others">Others</label>
+             <br>
+              
+            <br>
+            <label><b>Course :</b></label>   
+                 <select>
+                       <option value="Course">Course</option>    
+                       <option value="CS">Computer Fundamentals</option>  
+                       <option value="AI">Artificial Intelligence</option>  
+                       <option value="ML">Machine Learning</option>  
+                       <option value="OOPS">Object Oriented Programming</option>  
+                       <option value="DBMS">Database Management System</option>   
+                 </select>
+           <br>
+           <br>
+           <br><center>
+             <label><b>comment</b></label>
+             <input type="textarea" placeholder="" name="comment" required></center>
+             <br>
+             <br>
+             <center>
+           <input type="button" value="Register"/> 
+        </center>
+          </form>
+     </div>
+</body>
+</html>

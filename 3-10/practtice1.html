@@ -1,0 +1,71 @@
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title> Factorial</title>
+        
+    </head>
+    <body>
+        <form>
+            <label> Enter Number: </label>
+            <input type="text" name="text1">
+            <button onclick="Factorial()"> Calculate Factorial</button>
+        </form>
+        <div  class="d1">
+            hello
+        </div>
+    </body>
+    <script>
+        function Factorial()
+        {
+            var x=1;
+            var n=document.getElementsByName("text1")[0].value;
+            for(i=n;i>0;i--)
+            {
+                x=x*i;
+            }
+            document.getElementById(d1).innerText=("factorial of no is " +x);
+       // document.write("Factorial of number is" +x);  
+        }
+    </script>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+<title> Factorial</title>
+
+</head>
+<body>
+<form>
+<label> Enter Number: </label>
+<input type="number" name="text1">
+<button onclick="Factorial()"> Calculate Factorial</button>
+</form>
+<div id="d1">
+
+</div>
+</body>
+<!-- <script>
+function Factorial()
+{
+var x=1;
+var n=document.getElementsByName("text1")[0].value;
+for(i=n;i>0;i--)
+{
+x=x*i;
+}
+document.getElementById("d1").innerText=("factorial of no is " +x);
+
+}
+</script> -->
+<script>
+    function Factorial() {
+        var x = 1; // Declare 'x' within the function
+        var n = parseInt(document.getElementsByName("text1")[0].value); // Parse the input as an integer
+        for (var i = n; i > 0; i--) {
+            x = x * i;
+        }
+        document.getElementById("d1").innerText = "Factorial of the number is " + x;
+    }
+    </script>
+</html>
