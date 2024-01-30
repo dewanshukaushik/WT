@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration page for payment by credit card</title>
+  <script src="validate.js"></script>
+</head>
+<body>
+  <h1>Registration page for payment by credit card</h1>
+
+  <form action="/submit" method="post" onsubmit="return validateForm()">
+    <input type="text" name="cardNumber" placeholder="Credit card number">
+    <input type="date" name="expirationDate" placeholder="Expiration date">
+    <input type="text" name="cvvCode" placeholder="CVV code">
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      var cardNumber = document.querySelector('input[name="cardNumber"]').value;
+      var expirationDate = document.querySelector('input[name="expirationDate"]').value;
+      var cvvCode = document.querySelector('input[name="cvvCode"]').value;
+
+      if (!validateCreditCard(cardNumber, expirationDate, cvvCode)) {
+        alert("Invalid credit card information.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</body>
+</html>
